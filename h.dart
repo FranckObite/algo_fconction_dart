@@ -1,4 +1,4 @@
-String reverseUsingSplitAndJoin(String text) {
+S/* tring reverseUsingSplitAndJoin(String text) {
   final chars = text.split('');
   chars.le
 
@@ -22,12 +22,12 @@ void main() {
   }
 
   print(reverseUsingSplitAndJoin("hello word nan"));
-}
-/* void main() {
+} */
+void main() {
   String ss = "hello word";
   var g = ss.reversed.join();
 
-  print();
+ 
   print(ss.split(" ").join());
 }
- */
+ 

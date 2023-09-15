@@ -17,13 +17,7 @@ void main() {
       6,
       5,
       4,
-    ],
-    [
-      44,
-      3,
-      2,
-      1,
-    ],
+    ]
   ];
 
   List bv = [];
@@ -35,12 +29,14 @@ void main() {
     }
   }
 
-  print(nh);
-  var vd = nh..sort();
+  print(nh..sort());
+  
 
-  for (int n = 0; n < nh.length; n +=a.length) {
-    bv.add((vd[n]));
-  }
+   for (int n = 0; n < nh.length; n ++) {
+    if(n+1<a.length || n+2<a.length){
+      bv.addAll([nh[n], nh[n+1], nh[n+2]]);
+    }
+  } 
   print(bv);
 
   //print(nh..sort());
